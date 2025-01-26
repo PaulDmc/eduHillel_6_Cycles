@@ -16,10 +16,10 @@ namespace eduHillel_HW6_Demchenko_3
             int isDivision;
             int count;
 
-            Console.Write("Введіть максимальне число: ");
+            Console.Write("Enter the max number: ");
             if (int.TryParse(Console.ReadLine(), out int maxNumber) && maxNumber > 1)
             {
-                Console.WriteLine($"Прості числа від 1 до {maxNumber}:");
+                Console.WriteLine($"Prime numbers from 1 to {maxNumber}:");
 
                 for (firstNumber = 2; firstNumber <= maxNumber; firstNumber++)
                 {
@@ -41,10 +41,10 @@ namespace eduHillel_HW6_Demchenko_3
             }
             else
             {
-                Console.WriteLine("Будь ласка, введіть ціле число більше за 1.");
+                Console.WriteLine("Enter an integer greater than 1.");
             }
 
-            Console.WriteLine("Натисніть будь-яку клавішу для завершення програми");
+            Console.WriteLine("Press any key to end the program.");
             Console.ReadKey();
         }
     }

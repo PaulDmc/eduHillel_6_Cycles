@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 
 
-namespace eduHillel_HW62_Demchenko_2
+namespace eduHillel_HW6_Demchenko_2
 {
     internal class Program
     {
@@ -18,16 +18,16 @@ namespace eduHillel_HW62_Demchenko_2
         {
             int rows;
 
-            Console.Write("Введіть кількість рядків для побудови графіку:");
+            Console.Write("Enter the number of lines to graph:");
             while (!int.TryParse(Console.ReadLine(), out rows) || rows <= 0)
             {
-                Console.WriteLine("Будь ласка, введіть додатнє ціле число.");
+                Console.WriteLine("Enter a positive integer.");
             }
             for (int i = 1; i <= rows; i++)
             {
                 Console.WriteLine(new string('*', i));
             }
-            Console.WriteLine("Натисніть будь-яку клавішу для завершення програми");
+            Console.WriteLine("Press any key to end the program.");
             Console.ReadKey();
 
         }

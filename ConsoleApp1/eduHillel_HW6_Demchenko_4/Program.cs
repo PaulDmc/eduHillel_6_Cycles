@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 
 
-namespace eduHillel_HW62_Demchenko_2
+namespace eduHillel_HW6_Demchenko_4
 {
     public class Program
     {
@@ -20,19 +20,19 @@ namespace eduHillel_HW62_Demchenko_2
             bool hasDigit = false;
             bool hasSpecialChar = false;
 
-            Console.WriteLine("Введіть пароль:");
+            Console.WriteLine("Enter password:");
             var password = Console.ReadLine();
 
             bool isValidPassword(string password)
             {
                 if (password.Length < 8)
                 {
-                    Console.WriteLine("Пароль повинен містити принаймні 8 символів.");
+                    Console.WriteLine("Password must contain at least 8 characters.");
                     return false;
                 }
                 if (password is null)
                 {
-                    Console.WriteLine("Пароль не може бути порожнім.");
+                    Console.WriteLine("Password cannot be empty.");
                     return false;
                 }
 
@@ -51,13 +51,13 @@ namespace eduHillel_HW62_Demchenko_2
             }
             if (isValidPassword(password))
             {
-                Console.WriteLine("Пароль прийнятний.");
+                Console.WriteLine("Password is valid.");
             }
             else
             {
-                Console.WriteLine("Пароль не відповідає вимогам.");
+                Console.WriteLine("Password does not match.");
             }
-            Console.WriteLine("Натисніть будь-яку клавішу для завершення програми");
+            Console.WriteLine("Press any key to end the program.");
             Console.ReadKey();
         }
     }

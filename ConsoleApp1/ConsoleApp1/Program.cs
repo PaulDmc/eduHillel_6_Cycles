@@ -22,10 +22,10 @@ namespace Cycles
             double averageSalary = 0;
             double[] salaries;
 
-            Console.Write("Введіть кількість працівників: ");
+            Console.Write("Enter the number of employees: ");
             if (!int.TryParse(Console.ReadLine(), out numEmployees) || numEmployees <= 0)
             {
-                Console.WriteLine("Кількість працівників має бути цілим числом більше 0.");
+                Console.WriteLine("Number of employees must be greater than 0.");
                 return;
             }
 
@@ -33,10 +33,10 @@ namespace Cycles
 
             for (int i = 0; i < numEmployees; i++)
             {
-                Console.Write($"Введіть зарплату працівника {i + 1}: ");
+                Console.Write($"Enter the employee's salary {i + 1}: ");
                 if (!double.TryParse(Console.ReadLine(), out salary) || salary < 0)
                 {
-                    Console.WriteLine("Зарплата має бути числом і не може бути від'ємною. Спробуйте ще раз.");
+                    Console.WriteLine("Salary must be a number and cannot be negative. Try again.");
                     i--;
                     continue;
                 }
@@ -48,7 +48,7 @@ namespace Cycles
                 averageSalary = salaries.Sum() / salaries.Length;
             }
 
-            Console.WriteLine($"Середній заробіток: {averageSalary}");
+            Console.WriteLine($"Avarage salary: {averageSalary}");
             Console.ReadLine();
         }
 
